@@ -9,13 +9,13 @@ function App() {
         setcurrentForm(formName);
     }
     return (
-        <>
+        <div className="App">
             {currentForm === 'login' ? (
                 <Login onForm={toggleForm} />
             ) : (
                 <Register onForm={toggleForm} />
             )}
-        </>
+        </div>
     );
 }
 
